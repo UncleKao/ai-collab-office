@@ -1,0 +1,11 @@
+**
+!Dockerfile
+!office*.py
+!owner_proxy.py
+!manage.py
+!office-config.example.json
+!web/
+!web/*.js
+!web/*.html
+!web/*.css
+!web/*.svg

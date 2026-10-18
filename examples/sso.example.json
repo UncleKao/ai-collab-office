@@ -1,0 +1,12 @@
+{
+  "origin": "https://office.example.com",
+  "app": "office",
+  "owner_uid": "填入已驗證的使用者 UID",
+  "proxy_peers": [
+    "127.0.0.2"
+  ],
+  "local_peers": [
+    "127.0.0.1"
+  ],
+  "additional_uids": []
+}

@@ -1,0 +1,15 @@
+services:
+  office:
+    build: .
+    ports:
+      - "127.0.0.1:${OFFICE_PORT:-9870}:9870"
+    volumes:
+      - office-data:/app/data
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    # 預設不設定 restart policy，測試者自行決定常駐方式。
+volumes:
+  office-data:

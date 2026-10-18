@@ -1,0 +1,23 @@
+name: 測試問題
+description: 回報可重現的操作問題；請移除私人內容與認證。
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      description: 作業系統、Python、CLI 版本；不要貼帳號、登入碼或完整設定。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 預期與實際結果
+      description: 錯誤訊息請先去識別化，不要上傳原始私人工作單、Cookie 或日誌。
+    validations:
+      required: true

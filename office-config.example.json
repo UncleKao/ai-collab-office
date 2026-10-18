@@ -1,0 +1,96 @@
+{
+  "title": "AI 協作辦公室",
+  "owner_name": "負責人",
+  "timezone": "Asia/Taipei",
+  "automation": false,
+  "model_discovery": false,
+  "data_dir": "./data",
+  "secret_dir": "./data/secrets",
+  "context_dir": "./context",
+  "public_url": "http://127.0.0.1:9870",
+  "capacity_file": "",
+  "teams": {
+    "maintenance": "開發協作區",
+    "life": "助理協作區"
+  },
+  "life_lead": "assistant",
+  "execution_hosts": [
+    "local"
+  ],
+  "protected_paths": [],
+  "workers": {
+    "claude": {
+      "name": "Claude",
+      "provider": "claude",
+      "team": "maintenance",
+      "teams": [
+        "maintenance",
+        "life"
+      ],
+      "enabled": true,
+      "cli": "claude",
+      "model": "",
+      "models": [],
+      "read_roots": [],
+      "host": ""
+    },
+    "codex": {
+      "name": "Codex",
+      "provider": "codex",
+      "team": "maintenance",
+      "teams": [
+        "maintenance",
+        "life"
+      ],
+      "enabled": true,
+      "cli": "codex",
+      "model": "",
+      "models": [],
+      "read_roots": [],
+      "host": ""
+    },
+    "assistant": {
+      "name": "助理",
+      "provider": "claude",
+      "team": "life",
+      "teams": [
+        "life"
+      ],
+      "enabled": true,
+      "cli": "claude",
+      "model": "",
+      "models": [],
+      "read_roots": [],
+      "host": ""
+    },
+    "grok": {
+      "name": "Grok",
+      "provider": "grok",
+      "team": "maintenance",
+      "teams": [
+        "maintenance",
+        "life"
+      ],
+      "enabled": false,
+      "cli": "grok",
+      "model": "",
+      "models": [],
+      "read_roots": [],
+      "host": ""
+    },
+    "gemini": {
+      "name": "Gemini",
+      "provider": "gemini",
+      "team": "life",
+      "teams": [
+        "life"
+      ],
+      "enabled": false,
+      "cli": "gemini",
+      "model": "",
+      "models": [],
+      "read_roots": [],
+      "host": ""
+    }
+  }
+}
